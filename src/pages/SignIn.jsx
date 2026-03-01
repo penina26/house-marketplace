@@ -4,7 +4,8 @@ import { Link, useNavigate } from 'react-router-dom'
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
 import ArrowRightIcon from '../assets/svg/keyboardArrowRightIcon.svg?react'
 import VisibilityIcon from '../assets/svg/visibilityIcon.svg'
-import firebase from 'firebase/compat/app'
+// import firebase from 'firebase/compat/app'
+import OAuth from '../components/OAuth'
 
 
 function SignIn() {
@@ -91,7 +92,7 @@ function SignIn() {
                     </form>
 
                     {/*Google OAuth  */}
-
+                    <OAuth />
                     <Link
                         to="/sign-up"
                         className="registerLink"
